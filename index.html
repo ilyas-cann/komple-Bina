@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HASTANE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-bnanin-gr">
+        <li class="text">BİNANIN GİRİŞİ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-dam">
+        <li class="text">DAM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-dam-2-">
+        <li class="text">DAM 2 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-6-kat-kordor--1-">
+        <li class="text">6. KAT KORİDOR  1 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-6-kat-kordor-2">
+        <li class="text">6. KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-6-kat-oda-1">
+        <li class="text">6. KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-6--kat-oda-2">
+        <li class="text">6 . KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-6kat-kordor-3">
+        <li class="text">6.KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-6kat-oda-3">
+        <li class="text">6.KAT ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-5-kat-kordor-1">
+        <li class="text">5. KAT KORİDOR 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-5-kat-kordor-2">
+        <li class="text">5. KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-5kat-oda-1">
+        <li class="text">5.KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-5kat-oda-2">
+        <li class="text">5.KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-5-kat-kordor-3">
+        <li class="text">5. KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-5-kat-oda-3">
+        <li class="text">5. KAT ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-5-kat-oda-4">
+        <li class="text">5. KAT ODA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-5kat-oda-5">
+        <li class="text">5.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-4kat-kordor-1">
+        <li class="text">4.KAT KORİDOR 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-4kat-oda-1">
+        <li class="text">4.KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-4-kat-ara-kordor">
+        <li class="text">4. KAT ARA KORİDOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-4kat-oda-2">
+        <li class="text">4.KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-4kat-oda-3">
+        <li class="text">4.KAT ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-4kat-kordor-2">
+        <li class="text">4.KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-4kat-oda-5">
+        <li class="text">4.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-4kat-oda-10">
+        <li class="text">4.KAT ODA 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-4kat-kordor-3">
+        <li class="text">4.KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-4kat-oda-7">
+        <li class="text">4.KAT ODA 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-4kat-oda-8">
+        <li class="text">4.KAT ODA 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-4kat-oda-11">
+        <li class="text">4.KAT ODA 11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-4kat-oda-6">
+        <li class="text">4.KAT ODA 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-4kat-oda-9">
+        <li class="text">4.KAT ODA 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-">
+        <li class="text"></li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-amelyat-hane-gr">
+        <li class="text">AMELİYAT HANE GİRİŞ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-amelyathane-oda-1">
+        <li class="text">AMELİYATHANE ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-amelyathane-kordor">
+        <li class="text">AMELİYATHANE KORİDOR</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-amelyathane-oda-2">
+        <li class="text">AMELİYATHANE ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-amelyathane-oda-3">
+        <li class="text">AMELİYATHANE ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-3kat-kordor-1">
+        <li class="text">3.KAT KORİDOR 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-3-kat-ara-kordor-2">
+        <li class="text">3 .KAT ARA KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-3kat-ara-kordor-3">
+        <li class="text">3.KAT ARA KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-3-kat-ara-kordor-oda-1">
+        <li class="text">3. KAT ARA KORİDOR ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-3kat-ara-kordor-oda-2">
+        <li class="text">3.KAT ARA KORİDOR ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-3kat-ara-kordor-oda-3">
+        <li class="text">3.KAT ARA KORİDOR ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-3kat-ara-kordor-oda-4">
+        <li class="text">3.KAT ARA KORİDOR ODA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-3kat-ara-kordor-oda-5">
+        <li class="text">3.KAT ARA KORİDOR ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-3-kat-ara-kordor-oda-6">
+        <li class="text">3. KAT ARA KORİDOR ODA 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-3kat-ara-kordor-oda-7">
+        <li class="text">3.KAT ARA KORİDOR ODA 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-3kat-ara-kordor-oda-8">
+        <li class="text">3.KAT ARA KORİDOR ODA 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-3kat-kordor-2">
+        <li class="text">3.KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-3kat-oda-1">
+        <li class="text">3.KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-3kat-oda-2">
+        <li class="text">3.KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-3kat-oda-3">
+        <li class="text">3.KAT ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-3kat-kordor-3">
+        <li class="text">3.KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-3kat-oda-4">
+        <li class="text">3.KAT ODA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-3kat-oda-5">
+        <li class="text">3.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-3kat-kordor-4">
+        <li class="text">3.KAT KORİDOR 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-3kat-oda-5">
+        <li class="text">3.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-3kat-oda-6">
+        <li class="text">3.KAT ODA 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-3kat-oda-7">
+        <li class="text">3.KAT ODA 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-2kat-kordor-1-">
+        <li class="text">2.KAT KORİDOR 1 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-2kat-kordor-2">
+        <li class="text">2.KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-2-kat-oda-1">
+        <li class="text">2 .KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-2kat-oda-2">
+        <li class="text">2.KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-2kat-oda-3-">
+        <li class="text">2.KAT ODA 3 </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-2kat-oda-4">
+        <li class="text">2.KAT ODA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-2kat-oda-5">
+        <li class="text">2.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-2kat-oda-6">
+        <li class="text">2.KAT ODA 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-2kat-oda-7">
+        <li class="text">2.KAT ODA 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-2kat-kordor-3">
+        <li class="text">2.KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-2kat-oda-8">
+        <li class="text">2.KAT ODA 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-2kat-oda-9">
+        <li class="text">2.KAT ODA 9</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-2kat-oda-10">
+        <li class="text">2.KAT ODA 10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-2kat-oda-11">
+        <li class="text">2.KAT ODA 11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-2kat-kordor-4">
+        <li class="text">2.KAT KORİDOR 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-2kat-kordor-5">
+        <li class="text">2.KAT KORİDOR 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-2kat-oda-12">
+        <li class="text">2.KAT ODA 12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-2kat-oda-13">
+        <li class="text">2.KAT ODA 13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-1kat-kordor-2">
+        <li class="text">1.KAT KORİDOR 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-gs__3807">
+        <li class="text">GS__3807</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-1kat-oda-1">
+        <li class="text">1.KAT ODA 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-1kat-oda-2">
+        <li class="text">1.KAT ODA 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-1kat-kordor-1">
+        <li class="text">1.KAT KORİDOR 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-1kat-oda-3">
+        <li class="text">1.KAT ODA 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-1kat-oda-4">
+        <li class="text">1.KAT ODA 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-1kat-kordor-3">
+        <li class="text">1.KAT KORİDOR 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-1kat-kordor-4">
+        <li class="text">1.KAT KORİDOR 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-1kat-kordor-5">
+        <li class="text">1.KAT KORİDOR 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-1kat-oda-5">
+        <li class="text">1.KAT ODA 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-bnanin-sol-tarafi">
+        <li class="text">BİNANIN SOL TARAFI</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-accl-kapi">
+        <li class="text">ACCİL KAPI</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-bnanin-sa-tarafi">
+        <li class="text">BİNANIN SAĞ TARAFI</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
